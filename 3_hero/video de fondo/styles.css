@@ -1,0 +1,243 @@
+/* RESET moderno */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables (muy importante para escalar) */
+:root {
+    --primary: #2563eb;
+    --secondary: #1e293b;
+    --background: #ffffff;
+    --text: #111827;
+    --gray: #6b7280;
+
+    --max-width: 1200px;
+}
+
+/* Base */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+
+
+
+
+
+/*####################################################################################################*/
+
+
+/* NAV GENERAL */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 14vh;
+
+    background-color: rgba(0, 0, 0, 0.7); /* color + opacidad */
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+/* CONTENEDOR INTERNO */
+
+.contenedor-nav {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+.center-nav {
+
+    width: 40%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+
+.left-nav {
+
+    width: auto;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+
+
+
+}
+
+
+.right-nav {
+
+    width: auto;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+
+
+}
+
+
+/*aca doy estilo a todas las "letras" tipo "a" que haya en el contenedor nav*/
+.contenedor-nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+
+    color: white;
+    transition: transform 0.2s ease;
+
+}
+
+.contenedor-nav a:hover {
+    transform: scale(1.30); /* agranda sin romper layout */
+    color: #1e293b;
+}
+
+.logo-link {
+    height: 80%;
+
+    display: flex;
+
+    transition: transform 0.2s ease;
+}
+
+
+
+.contenedor-nav a.logo-link {
+    transition: transform 0.2s ease;
+
+}
+
+
+.contenedor-nav a.logo-link:hover {
+    transform: scale(1.10);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*###########################################################################################################################*/
+
+
+
+/* HERO CONTENEDOR */
+.hero {
+    width: 100%;
+    height: 100vh; /* alto del hero */
+
+    background-image: url("media/fondo.png");
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+    margin-top: 14vh;
+    /* PARA QUE NO SE TAPEN O SOBREPONGAN CON EL NAV*/
+}
+
+
+.hero-video {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+
+
+}
+
+
+
+
+/* CAPA OSCURA */
+.hero-overlay {
+    position: absolute;
+    top: 0; /*bien arriba en su contenedor*/
+    left: 0; /*empezando desde la izquierda*/
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5); /* oscurece */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* TEXTO */
+.hero-text {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+
+
+
+/*########################################################################################################################*/
