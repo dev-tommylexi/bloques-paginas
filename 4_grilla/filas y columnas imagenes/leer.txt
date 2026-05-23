@@ -1,0 +1,15 @@
+cajas con una imagen, titulo y un pequenio texto
+
+
+
+360 x 800
+
+390 x 844
+
+412 x 915
+
+768 x 1024
+
+1366 x 768
+
+1920 x 1080
