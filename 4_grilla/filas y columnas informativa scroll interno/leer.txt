@@ -1,0 +1,2 @@
+rectangulos simples con un titulo y un breve texto y un boton de extender y de contraer, en el caso
+de que no haya informacion que mostrar el bloque extra mostrado se vera vacio y pequenio
