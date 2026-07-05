@@ -1,0 +1,20 @@
+problemas que me he encontrado
+
+como hago que las card sean un loop?
+
+chat me seguria clone las cards por lo que el usuario nunca llegari a ver el final
+
+claro pero en algun momento llegas a la ultima card, eso como se maneja? 
+como te devuelve a la primera de la fila logica sin pasar rapidamente por las demas?
+
+al tener loop lo que se me ocurre es que se usen slides al igual que use en el hero:
+
+estan todas apiladas en si y se van activando y desactivando segun sea necesario, pero eso es eficiente?
+
+al hacer eso elimino la posibilidad de que se vea parte de la siguiente card y parte de la anterior
+dando la senal al usuario que hay que contenido y puede interacturar con ese elemento y que es un carrousel
+
+pero si le doy moviento automatico el usuario ya ve eque eso cambia y ya sabria que es un carrousel
+tengo que averiguar como javascript crea el loop usando un viewport con hidden ya que por ahora solo me 
+parece viable los slides que sea activan y desactivan y claro tengo que hacer que se puedan activar con el
+touch ya que en mi modelo de hero use botones
